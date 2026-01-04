@@ -1,19 +1,19 @@
-# 🚕 YellowTrip NYC Taxi Activity Analysis
+# YellowTrip NYC Taxi Activity Analysis
 
-## 📋 Project Overview
+## Project Overview
 
 This project presents a comprehensive Power BI data analysis of **YellowTrip taxi operations** in New York City during **May-June 2020**. The analysis provides actionable insights from both **vendor** (company) and **employee** (driver) perspectives, examining trip patterns, vehicle utilization, rush hour trends, income distribution, tipping behavior, and passenger demographics across NYC's five boroughs.
 
-### 📅 Time Period
+### Time Period
 - **May - June 2020**
 - **Location:** New York City (Manhattan, Brooklyn, Queens, Bronx, Staten Island, EWR Airport)
 
-### 🎯 Dual Perspective Analysis
+### Dual Perspective Analysis
 This analysis serves two key stakeholder groups:
 1. **Vendors/Companies:** Performance metrics, fleet optimization, location strategies
 2. **Employees/Drivers:** Income optimization, best working days/locations, tipping insights
 
-## 📊 Data Sources
+## Data Sources
 
 The analysis incorporates multiple data dimensions:
 
@@ -32,7 +32,7 @@ The analysis incorporates multiple data dimensions:
 - Number of Passengers
 - Average Income per Trip
 
-## 🎯 Objectives
+## Objectives
 
 ### Overall Goals:
 1. **Analyze Performance Trends** - Identify patterns in taxi operations over time
@@ -41,9 +41,9 @@ The analysis incorporates multiple data dimensions:
 4. **Optimize Operations** - Provide data-driven recommendations for vendors and drivers
 5. **Statistical Analysis** - Apply comprehensive analytical approaches to uncover insights
 
-## 🔍 Business Questions Analyzed
+## Business Questions Analyzed
 
-### 💼 Vendor Perspective Questions:
+### Vendor Perspective Questions:
 
 1. **What is the distribution of vehicle types by day of the week?**
    - **Finding:** Friday has the most trips on average
@@ -67,7 +67,7 @@ The analysis incorporates multiple data dimensions:
    - **EWR International Airport (Newark):** 38 trips
    - **Recommendation:** Maximize vehicle presence in Manhattan, especially during peak times; consider investigating unknown borough LocationIDs 264 and 265
 
-### 👥 Employee Perspective Questions:
+### Employee Perspective Questions:
 
 1. **What are the two days a week when the average income per trip is the highest?**
    - **Average Income per Trip:** $19.12
@@ -90,7 +90,7 @@ The analysis incorporates multiple data dimensions:
    - **Staten Island:** 206 passengers
    - **EWR International Airport (Newark):** 64 passengers
 
-## 📈 Key Findings
+## Key Findings
 
 ### Trip Patterns:
 - **Busiest Day:** Friday has the highest average number of trips
@@ -111,7 +111,7 @@ The analysis incorporates multiple data dimensions:
 - Manhattan and Queens offer the best tipping opportunities
 - Medium vehicles may generate higher tips per kilometer than private vehicles
 
-## 💡 Conclusions
+## Conclusions
 
 ### Key Takeaways:
 
@@ -121,7 +121,7 @@ The analysis incorporates multiple data dimensions:
 4. **Vehicle Preference:** Private vehicles are the most popular choice among customers
 5. **Vendor Leader:** VeriFone Inc. leads in trip numbers but needs to address high return rates
 
-## 🛠️ Recommendations
+## Recommendations
 
 ### For Vendors/Companies:
 
@@ -163,7 +163,7 @@ The analysis incorporates multiple data dimensions:
    - Position vehicles in high-passenger boroughs
    - Avoid low-activity areas like Staten Island unless specific demand exists
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 yellowtrip-nyc-taxi-analysis/
@@ -175,7 +175,7 @@ yellowtrip-nyc-taxi-analysis/
 └── .gitignore                              # Git ignore file
 ```
 
-## 📊 Technologies & Tools Used
+## Technologies & Tools Used
 
 - **Power BI:** Data visualization and dashboard creation
 - **Data Analysis:** Statistical analysis and pattern recognition
@@ -183,7 +183,7 @@ yellowtrip-nyc-taxi-analysis/
 - **Time Series Analysis:** Temporal patterns and trends
 - **Comparative Analysis:** Vendor vs. employee perspectives
 
-## 📄 Dataset Information
+## Dataset Information
 
 ### Coverage:
 - **Time Period:** May-June 2020
@@ -199,7 +199,7 @@ yellowtrip-nyc-taxi-analysis/
 6. EWR International Airport (Newark)
 7. Unknown locations (requires investigation)
 
-## 🚀 How to Use This Analysis
+## How to Use This Analysis
 
 ### For Vendors:
 1. Review geographic insights to optimize fleet distribution
@@ -219,7 +219,7 @@ yellowtrip-nyc-taxi-analysis/
 3. Apply findings to resource allocation
 4. Leverage recommendations for operational improvements
 
-## 📝 Future Analysis Opportunities
+## Future Analysis Opportunities
 
 1. **Extended Time Period:** Analyze full year to identify seasonal patterns
 2. **Pre/Post COVID-19:** Compare operations before and after pandemic impact
@@ -229,7 +229,7 @@ yellowtrip-nyc-taxi-analysis/
 6. **Customer Segmentation:** Deep dive into passenger behavior patterns
 7. **Route Optimization:** Analyze common routes for efficiency improvements
 
-## 👤 Author
+## Author
 
 **dcardosomr-cmd**
 
@@ -237,7 +237,7 @@ Data Analyst specializing in business intelligence and operational analytics.
 
 For questions or collaboration opportunities, please reach out through GitHub.
 
-## 💬 Q&A and Feedback
+## Q&A and Feedback
 
 This analysis is open for discussion and refinement. If you have:
 - Questions about the methodology
