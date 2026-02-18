@@ -1,254 +1,172 @@
-# YellowTrip NYC Taxi Activity Analysis
+# YellowTrip-NYC-Taxi-Analysis
 
 ## Project Overview
 
-This project presents a comprehensive Power BI data analysis of **YellowTrip taxi operations** in New York City during **May-June 2020**. The analysis provides actionable insights from both **vendor** (company) and **employee** (driver) perspectives, examining trip patterns, vehicle utilization, rush hour trends, income distribution, tipping behavior, and passenger demographics across NYC's five boroughs.
+This project analyses 898K Yellow Taxi trips in New York City during May–June 2020 to uncover operational patterns, revenue drivers, and optimisation opportunities. The analysis is built from two perspectives — **Vendor** (fleet operations) and **Employee** (driver earnings) — using Power BI dashboards connected to NYC TLC trip record data.
 
-### Time Period
-- **May - June 2020**
-- **Location:** New York City (Manhattan, Brooklyn, Queens, Bronx, Staten Island, EWR Airport)
+**Context:** May–June 2020 coincided with NYC's COVID-19 lockdown and early reopening phase. Trip volumes were significantly lower than pre-pandemic levels, making this a unique window into how taxi operations behave under constrained demand — and which patterns persist even during a downturn.
 
-### Dual Perspective Analysis
-This analysis serves two key stakeholder groups:
-1. **Vendors/Companies:** Performance metrics, fleet optimization, location strategies
-2. **Employees/Drivers:** Income optimization, best working days/locations, tipping insights
+**Goal:** Identify the highest-value time slots, locations, and vehicle types to help vendors optimise fleet deployment and help drivers maximise earnings per shift.
 
-## Data Sources
-
-The analysis incorporates multiple data dimensions:
-
-### Vendor Perspective Data:
-- Income and Returns
-- Vehicle Types
-- Pickup Locations (by borough)
-- Rush Hours and Peak Times
-- Vendor Performance (VeriFone Inc. and others)
-
-### Employee Perspective Data:
-- Trip Income and Tips
-- Borough-level Trip Distribution
-- Vehicle Types and Performance
-- Distance Traveled
-- Number of Passengers
-- Average Income per Trip
-
-## Objectives
-
-### Overall Goals:
-1. **Analyze Performance Trends** - Identify patterns in taxi operations over time
-2. **Understand Trip Patterns** - Examine trip volume and distance variations
-3. **Evaluate Income & Tips** - Assess earning potential across different factors
-4. **Optimize Operations** - Provide data-driven recommendations for vendors and drivers
-5. **Statistical Analysis** - Apply comprehensive analytical approaches to uncover insights
-
-## Business Questions Analyzed
-
-### Vendor Perspective Questions:
-
-1. **What is the distribution of vehicle types by day of the week?**
-   - **Finding:** Friday has the most trips on average
-   - **Finding:** Private vehicles are the most chosen vehicle type
-   - **Recommendation:** Focus on acquiring private service vehicles; investigate lower demand for other vehicle types
-
-2. **Which five hours a day, on average, have the most starting times for rides?**
-   - **Top 3 Rush Hours:**
-     - 1st: 15:00 (3:00 PM)
-     - 2nd: 14:00 (2:00 PM)
-     - 3rd: 16:00 (4:00 PM)
-   - **Recommendation:** These afternoon hours (1 PM - 5 PM) are priority times for vehicle availability
-
-3. **Where are the most trips generated? (Pickup borough perspective)**
-   - **Manhattan:** 775,326 trips (highest)
-   - **Queens:** 54,457 trips
-   - **Brooklyn:** 37,116 trips
-   - **Bronx:** 21,825 trips
-   - **Unknown:** 8,417 trips
-   - **Staten Island:** 884 trips
-   - **EWR International Airport (Newark):** 38 trips
-   - **Recommendation:** Maximize vehicle presence in Manhattan, especially during peak times; consider investigating unknown borough LocationIDs 264 and 265
-
-### Employee Perspective Questions:
-
-1. **What are the two days a week when the average income per trip is the highest?**
-   - **Average Income per Trip:** $19.12
-   - **Recommendation:** Drivers should prioritize working these high-income days and avoid taking days off or scheduling maintenance during peak earning periods
-
-2. **What is the type of vehicle with the highest tip per kilometer?**
-   - **Finding:** Medium vehicles show higher tips per kilometer compared to private vehicles
-   - **Recommendation:** Driving a medium vehicle may be more profitable, though further analysis of trip length is needed
-
-3. **What are the best tipping boroughs?**
-   - **Top Boroughs for Tips:** Manhattan and Queens
-   - **Recommendation:** Drivers should focus on these boroughs for higher take-home earnings
-
-4. **Which boroughs have the highest number of passengers?**
-   - **Manhattan:** 973,316 passengers (highest)
-   - **Queens:** 51,956 passengers
-   - **Brooklyn:** 13,920 passengers
-   - **Unknown:** 9,670 passengers
-   - **Bronx:** 8,025 passengers
-   - **Staten Island:** 206 passengers
-   - **EWR International Airport (Newark):** 64 passengers
-
-## Key Findings
-
-### Trip Patterns:
-- **Busiest Day:** Friday has the highest average number of trips
-- **Peak Hours:** Rush hours occur between 13:00 and 17:00, with 15:00 as the peak hour
-- **Vehicle Preference:** Private vehicles are the most preferred vehicle type
-
-### Geographic Insights:
-- **Top 3 Boroughs:** Manhattan (dominant), Queens, and Brooklyn account for the vast majority of trips and passengers
-- **Manhattan Dominance:** Manhattan generates over 87% of total trips and passengers
-- **Low Activity:** Staten Island and EWR Airport show minimal taxi activity
-
-### Vendor Performance:
-- **Top Vendor:** VeriFone Inc. has the highest trip numbers
-- **Concern:** VeriFone Inc. shows high number of returns - requires review and investigation
-
-### Income & Tips:
-- Average income per trip: **$19.12**
-- Manhattan and Queens offer the best tipping opportunities
-- Medium vehicles may generate higher tips per kilometer than private vehicles
-
-## Conclusions
-
-### Key Takeaways:
-
-1. **High Trip Volume:** Friday is the busiest day for taxi operations
-2. **Afternoon Rush:** Peak activity occurs between 13:00 and 17:00 hours
-3. **Manhattan Dominance:** Manhattan is the primary market, generating the overwhelming majority of trips and passenger volume
-4. **Vehicle Preference:** Private vehicles are the most popular choice among customers
-5. **Vendor Leader:** VeriFone Inc. leads in trip numbers but needs to address high return rates
-
-## Recommendations
-
-### For Vendors/Companies:
-
-1. **Geographic Focus:**
-   - Concentrate resources on **Manhattan, Queens, and Brooklyn**
-   - Maintain high vehicle availability in Manhattan during all hours
-   - Consider limited operations in Staten Island and Bronx
-
-2. **Data Quality:**
-   - **Investigate unknown boroughs** with LocationID 264 and 265
-   - Improve data collection and location tracking
-
-3. **Market Opportunity:**
-   - **New players** should consider focusing on:
-     - Night shift operations (less competition)
-     - Markets without medium car saturation
-
-4. **Performance Review:**
-   - **VeriFone Inc.** should review and reduce high return numbers
-   - Investigate causes of returns and implement corrective measures
-
-5. **Fleet Management:**
-   - Prioritize private vehicle acquisition
-   - Ensure peak hour coverage (13:00-17:00)
-   - Plan Friday operations with maximum capacity
-
-### For Employees/Drivers:
-
-1. **Maximize Earnings:**
-   - Work during **high-income days** (avoid taking these days off)
-   - Focus operations in **Manhattan and Queens** for better tips
-   - Consider operating during **afternoon rush hours (13:00-17:00)**
-
-2. **Vehicle Choice:**
-   - Evaluate profitability of **medium vehicles** vs. private vehicles
-   - Consider trip length patterns when selecting vehicle type
-
-3. **Strategic Positioning:**
-   - Position vehicles in high-passenger boroughs
-   - Avoid low-activity areas like Staten Island unless specific demand exists
-
-## Repository Structure
-
-```
-yellowtrip-nyc-taxi-analysis/
-├── data/
-│   └── [Raw data files - to be uploaded]
-├── reports/
-│   └── Power-Bi-Presentation_Final.pptx    # Final presentation deck
-├── README.md                               # Project documentation
-└── .gitignore                              # Git ignore file
-```
-
-## Technologies & Tools Used
-
-- **Power BI:** Data visualization and dashboard creation
-- **Data Analysis:** Statistical analysis and pattern recognition
-- **Geographic Analysis:** Borough-level insights across NYC
-- **Time Series Analysis:** Temporal patterns and trends
-- **Comparative Analysis:** Vendor vs. employee perspectives
-
-## Dataset Information
-
-### Coverage:
-- **Time Period:** May-June 2020
-- **Location:** New York City (5 boroughs + EWR Airport)
-- **Metrics:** Trips, income, tips, passengers, vehicle types, pickup locations
-
-### Borough Coverage:
-1. Manhattan (primary market)
-2. Queens
-3. Brooklyn
-4. Bronx
-5. Staten Island
-6. EWR International Airport (Newark)
-7. Unknown locations (requires investigation)
-
-## How to Use This Analysis
-
-### For Vendors:
-1. Review geographic insights to optimize fleet distribution
-2. Analyze peak hour data to ensure adequate vehicle coverage
-3. Examine vehicle type preferences for fleet planning
-4. Assess vendor performance metrics for competitive positioning
-
-### For Drivers:
-1. Identify high-income days and hours
-2. Determine optimal operating locations
-3. Evaluate vehicle type options for profitability
-4. Plan work schedules around peak earning opportunities
-
-### For Stakeholders:
-1. Use insights for strategic planning
-2. Reference data for market entry decisions
-3. Apply findings to resource allocation
-4. Leverage recommendations for operational improvements
-
-## Future Analysis Opportunities
-
-1. **Extended Time Period:** Analyze full year to identify seasonal patterns
-2. **Pre/Post COVID-19:** Compare operations before and after pandemic impact
-3. **Weather Correlation:** Examine impact of weather on trip patterns
-4. **Special Events:** Analyze effect of NYC events on taxi demand
-5. **Predictive Modeling:** Build models to forecast demand and optimize operations
-6. **Customer Segmentation:** Deep dive into passenger behavior patterns
-7. **Route Optimization:** Analyze common routes for efficiency improvements
-
-## Author
-
-**dcardosomr-cmd**
-
-Data Analyst specializing in business intelligence and operational analytics.
-
-For questions or collaboration opportunities, please reach out through GitHub.
-
-## Q&A and Feedback
-
-This analysis is open for discussion and refinement. If you have:
-- Questions about the methodology
-- Suggestions for additional analysis
-- Feedback on the findings
-- Requests for specific insights
-
-Please feel free to open an issue or reach out!
+**Tools & Technologies:** Power BI · NYC TLC Trip Record Data · Geographic Analysis (Bing Maps) · DAX
 
 ---
 
-*Analysis Period: May-June 2020*  
-*Last Updated: January 2026*  
-*Created with Power BI*
+## Executive Summary
+
+| Metric | Value |
+|--------|-------|
+| Total Trips | 898K |
+| Total Income | $17M |
+| Total Returns | $58K |
+| Total Tips | $1.47M |
+| Avg Income per Trip | $19.12 |
+| Avg Tip | $1.63 |
+| Avg Distance | 9.25 km |
+
+### Top Findings
+
+- **Friday dominates** trip volume across both vehicle types, while **Monday generates the highest avg income per trip ($21.59)** — volume and value peak on different days.
+- **Afternoon rush (13:00–17:00)** accounts for the top 5 busiest hours, with 15:00 as the absolute peak. Morning rush is notably absent during the COVID period.
+- **Manhattan generates 87%+ of all trips** (775K) and passengers (973K). Queens is a distant second at 54K trips. Staten Island and EWR are negligible.
+- **EWR airport tips are 6x higher** ($9.90 avg) than Manhattan ($1.59), but with only 38 trips it's a niche opportunity, not a strategy.
+- **Medium cars earn $0.38/km in tips** vs Private cars at $0.17/km — more than double the tip rate per kilometre despite Private being the dominant vehicle type.
+- **Returns total $58K** against $17M income (0.34%), which is low but worth monitoring by vendor for quality issues.
+
+---
+
+## 1. Vendor Perspective — Fleet Operations
+
+![Vendor Dashboard](dashboards/Vendor.png)
+
+The vendor dashboard reveals where and when to deploy vehicles for maximum utilisation.
+
+### Trip Volume by Day
+
+| Day | Trip Volume | Rank |
+|-----|-----------|------|
+| Friday | ~175K | 1st |
+| Tuesday | ~150K | 2nd |
+| Monday | ~140K | 3rd |
+| Thursday | ~130K | 4th |
+| Wednesday | ~125K | 5th |
+| Saturday | ~100K | 6th |
+| Sunday | ~75K | 7th |
+
+Private vehicles dominate every day of the week, with Medium Cars representing a small fraction of total trips. Weekend volumes drop significantly — Sunday is roughly 40% of Friday's volume.
+
+### Top Rush Hours
+
+The 5 busiest hours are all in the afternoon block:
+
+| Rank | Hour | Avg Trips |
+|------|------|----------|
+| 1st | 15:00 | ~68K |
+| 2nd | 14:00 | ~65K |
+| 3rd | 16:00 | ~63K |
+| 4th | 13:00 | ~60K |
+| 5th | 17:00 | ~58K |
+
+The traditional morning rush (7:00–9:00) does not appear in the top 5 — likely a COVID effect as commuter traffic was severely reduced during this period. This pattern may not hold in normal operating conditions.
+
+### Geographic Concentration
+
+Manhattan accounts for the overwhelming majority of pickup volume, visible as the sole concentration point on the map. The vendor filter shows three operators: Creative Mobile Technologies LLC, VeriFone Inc., and NewPlayer.
+
+**Vendor actions:** Maximise Manhattan coverage during 13:00–17:00 weekdays. Ensure Friday fleet capacity is at maximum. Investigate the $58K in returns — is it concentrated in one vendor or spread evenly?
+
+---
+
+## 2. Employee Perspective — Driver Earnings
+
+![Employee Dashboard](dashboards/Employee.png)
+
+The employee dashboard focuses on what drivers can control: which days to work, where to position, and which vehicle to drive.
+
+### Average Income by Day
+
+| Day | Avg Income/Trip |
+|-----|----------------|
+| Monday | $21.59 |
+| Sunday | $19.34 |
+| Friday | $18.75 |
+| Thursday | $18.59 |
+| Saturday | $18.55 |
+| Tuesday | $18.55 |
+| Wednesday | $18.41 |
+
+Monday pays $3.18 more per trip than Wednesday — a 17% premium. This is counterintuitive since Friday has the highest volume, but lower competition on Monday likely drives higher per-trip fares. Drivers should avoid taking Mondays off.
+
+### Average Tip by Borough
+
+| Borough | Avg Tip | Trips |
+|---------|---------|-------|
+| EWR Airport | $9.90 | 38 |
+| Queens | $2.75 | 54,457 |
+| Manhattan | $1.59 | 775,326 |
+| Brooklyn | $1.20 | 37,116 |
+| Staten Island | $1.10 | 884 |
+| Bronx | $0.92 | 21,825 |
+
+EWR's $9.90 avg tip is striking but based on only 38 trips — not a reliable strategy. Queens at $2.75 on 54K trips is the actionable finding: 73% higher tips than Manhattan with meaningful volume. Drivers finishing Manhattan trips heading toward Queens should consider repositioning rather than returning.
+
+### Tip per Km by Vehicle Type
+
+Medium Cars earn **$0.38/km** in tips vs Private vehicles at **$0.17/km** — more than double. Despite Private vehicles dominating trip volume, Medium Cars are significantly more profitable on a per-kilometre basis for tip income. Drivers with the option should evaluate whether the Medium Car tip premium offsets any volume differences.
+
+### Passengers by Borough
+
+Manhattan dominates with ~973K passengers, followed by Queens (~52K), Brooklyn (~14K), and the Bronx (~8K). Staten Island and EWR are negligible. The Unknown category (~10K passengers) suggests data quality issues with LocationIDs 264 and 265 that should be investigated.
+
+---
+
+## 3. Strategic Recommendations
+
+### For Vendors / Fleet Operators
+
+| Priority | Action | Rationale |
+|----------|--------|-----------|
+| 1 | **Max fleet in Manhattan, weekdays 13:00–17:00** | 87% of trips, top 5 rush hours all afternoon |
+| 2 | **Scale up Friday capacity** | Highest volume day by ~15% over Tuesday |
+| 3 | **Investigate $58K returns** | Identify if vendor-specific or systemic |
+| 4 | **Evaluate Medium Car expansion** | Higher tip/km suggests underserved demand |
+| 5 | **Resolve unknown LocationIDs 264/265** | ~10K passengers with no borough attribution |
+
+### For Drivers
+
+| Priority | Action | Rationale |
+|----------|--------|-----------|
+| 1 | **Don't take Mondays off** | $21.59 avg/trip — highest earning day |
+| 2 | **Work the 13:00–17:00 block** | Peak demand, highest trip availability |
+| 3 | **Position in Queens after Manhattan runs** | $2.75 avg tip vs $1.59 in Manhattan |
+| 4 | **Consider Medium Car if available** | $0.38/km tip vs $0.17/km for Private |
+| 5 | **Avoid Staten Island and Bronx** | Low volume, lowest tips ($0.92–$1.10) |
+
+---
+
+## COVID-19 Context
+
+This dataset covers May–June 2020 — the tail end of NYC's initial lockdown and early Phase 1 reopening. Key implications:
+
+- **Trip volumes are dramatically lower** than pre-pandemic baselines (NYC typically sees 300K+ yellow taxi trips per day vs ~15K/day in this dataset)
+- **The absent morning rush** (no 7:00–9:00 peak) is almost certainly a COVID effect from reduced commuter traffic
+- **Afternoon dominance** may partially normalise post-pandemic, but the 13:00–17:00 concentration is a useful signal even under normal conditions
+- **Geographic concentration** in Manhattan may be even more pronounced than normal, as outer-borough demand collapsed further during lockdown
+
+These findings should be validated against post-pandemic data before making long-term strategic decisions.
+
+---
+
+---
+
+## Future Enhancements
+
+- Compare with 2019 pre-COVID data to isolate pandemic effects
+- Add seasonal analysis across a full 12-month period
+- Build a predictive model for trip demand by hour/borough
+- Correlate weather data with trip volume and tip behaviour
+- Analyse route-level data for driver positioning optimisation
+
+---
+
+*Analysis Period: May–June 2020 · Last Updated: January 2026*
