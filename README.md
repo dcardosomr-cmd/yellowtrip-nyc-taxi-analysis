@@ -157,7 +157,6 @@ These findings should be validated against post-pandemic data before making long
 
 ---
 
-## Repository Structure
 
 
 ## Future Enhancements
