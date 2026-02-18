@@ -37,7 +37,7 @@ This project analyses 898K Yellow Taxi trips in New York City during May–June 
 
 ## 1. Vendor Perspective — Fleet Operations
 
-![Vendor Dashboard](dashboards/Vendor.png)
+![Vendor Dashboard](Dashboards/Vendor.png)
 
 The vendor dashboard reveals where and when to deploy vehicles for maximum utilisation.
 
@@ -79,7 +79,7 @@ Manhattan accounts for the overwhelming majority of pickup volume, visible as th
 
 ## 2. Employee Perspective — Driver Earnings
 
-![Employee Dashboard](dashboards/Employee.png)
+![Employee Dashboard](Dashboards/Employee.png)
 
 The employee dashboard focuses on what drivers can control: which days to work, where to position, and which vehicle to drive.
 
@@ -157,7 +157,8 @@ These findings should be validated against post-pandemic data before making long
 
 ---
 
----
+## Repository Structure
+
 
 ## Future Enhancements
 
